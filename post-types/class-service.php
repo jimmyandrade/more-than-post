@@ -58,6 +58,7 @@ class Service {
 			'publicly_queryable'  => true,
 			'capability_type'     => 'page',
 			'show_in_rest'        => true,
+			'taxonomies'          => [ 'category' ],
 		];
 		register_post_type( 'service', $args );
 

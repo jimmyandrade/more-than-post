@@ -4,6 +4,8 @@ namespace More_Than_Post\Post_Types;
 
 class Team_Person {
 
+	const POST_TYPE = 'team_person';
+
 	public static function init() {
 
 		$labels = array(
@@ -54,7 +56,7 @@ class Team_Person {
 			'capability_type'     => 'page',
 			'show_in_rest'        => true,
 		);
-		register_post_type( 'team_person', $args );
+		register_post_type( Team_Person::POST_TYPE, $args );
 
 	}
 

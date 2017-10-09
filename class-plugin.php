@@ -4,11 +4,17 @@ namespace More_Than_Post;
 
 class Plugin {
 
+	/**
+	 * Plugin constructor.
+	 *
+	 * Add custom post types only after create_initial_taxonomies().
+	 * If we used 'init', we could not add built-in taxonomies (like category) to custom post types.
+	 */
 	public function __construct() {
-		add_action( 'after_setup_theme', [ __CLASS__, 'after_setup_theme' ], 1 );
+		add_action( 'init', [ __CLASS__, 'init' ], 1 );
 	}
 
-	public static function after_setup_theme() {
+	public static function init() {
 		$features = [
 			'event'       => 'Event',
 			'partner'     => 'Partner',
