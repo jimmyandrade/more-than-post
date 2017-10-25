@@ -40,7 +40,7 @@ class Team_Person {
 		$args   = array(
 			'label'               => __( 'Team Person', 'winner-bh' ),
 			'labels'              => $labels,
-			'supports'            => array( 'title', 'excerpt', 'thumbnail', 'page-attributes', 'content' ),
+			'supports'            => array( 'title', 'excerpt', 'thumbnail', 'page-attributes', 'editor' ),
 			'hierarchical'        => false,
 			'public'              => true,
 			'show_ui'             => true,
