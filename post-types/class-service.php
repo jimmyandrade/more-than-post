@@ -38,7 +38,7 @@ class Service {
 		$args   = [
 			'label'             => __( 'Service', 'winner-bh' ),
 			'labels'            => $labels,
-			'supports'          => [ 'title', 'editor', 'thumbnail', 'page-attributes', ],
+			'supports'          => [ 'title', 'excerpt', 'editor', 'thumbnail', 'page-attributes' ],
 			'hierarchical'      => false,
 			'public'            => true,
 			'show_ui'           => true,
