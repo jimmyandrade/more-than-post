@@ -55,6 +55,12 @@ class Team_Person {
 			'rewrite'             => false,
 			'capability_type'     => 'page',
 			'show_in_rest'        => true,
+			'rewrite'             => [
+				'slug'       => 'equipe',
+				'with_front' => false,
+				'feeds'      => false,
+				'pages'      => false,
+			],
 		);
 		register_post_type( Team_Person::POST_TYPE, $args );
 
