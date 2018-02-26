@@ -17,6 +17,7 @@ class Plugin {
 	public static function init() {
 		$features = [
 			'event'       => 'Event',
+			'link'        => 'Link',
 			'partner'     => 'Partner',
 			'service'     => 'Service',
 			'team-person' => 'Team_Person',
